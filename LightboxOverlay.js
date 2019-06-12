@@ -130,7 +130,7 @@ export default class LightboxOverlay extends Component {
 
   open = () => {
     if(isIOS) {
-      StatusBar.setHidden(true, 'fade');
+      // StatusBar.setHidden(true, 'fade');
     }
     this.state.pan.setValue(0);
     this.setState({
@@ -154,7 +154,7 @@ export default class LightboxOverlay extends Component {
   close = () => {
     this.props.willClose();
     if(isIOS) {
-      StatusBar.setHidden(false, 'fade');
+      // StatusBar.setHidden(false, 'fade');
     }
     this.setState({
       isAnimating: true,
